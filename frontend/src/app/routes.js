@@ -1,0 +1,42 @@
+export const paths = {
+  login: '/login',
+  home: '/',
+  products: '/products',
+  productNew: '/products/new',
+  product: (productId = ':productId') => `/products/${productId}`,
+  productEdit: (productId = ':productId') => `/products/${productId}/edit`,
+  customers: '/customers',
+  customerNew: '/customers/new',
+  customer: (customerId = ':customerId') => `/customers/${customerId}`,
+  customerEdit: (customerId = ':customerId') => `/customers/${customerId}/edit`,
+  sales: '/sales',
+  salesToday: '/sales/today',
+  saleNew: '/sales/new',
+  sale: (saleId = ':saleId') => `/sales/${saleId}`,
+  saleEdit: (saleId = ':saleId') => `/sales/${saleId}/edit`,
+  saleInvoice: (saleId = ':saleId') => `/sales/${saleId}/invoice`,
+  saleInvoiceEdit: (saleId = ':saleId') => `/sales/${saleId}/invoice/edit`,
+  saleItems: '/sale-items',
+  finance: '/finance',
+  transactionNew: '/transactions/new',
+  transaction: (transactionId = ':transactionId') => `/transactions/${transactionId}`,
+  transactionEdit: (transactionId = ':transactionId') => `/transactions/${transactionId}/edit`,
+  expenseNew: '/expenses/new',
+  expense: (expenseId = ':expenseId') => `/expenses/${expenseId}`,
+  expenseEdit: (expenseId = ':expenseId') => `/expenses/${expenseId}/edit`,
+  users: '/users',
+  userNew: '/users/new',
+  user: (userId = ':userId') => `/users/${userId}`,
+  userEdit: (userId = ':userId') => `/users/${userId}/edit`,
+  companySettings: '/settings/company',
+  profile: '/profile',
+  forbidden: '/403',
+}
+
+export const roles = {
+  admin: 'admin',
+  seller: 'seller',
+  monitor: 'monitor',
+}
+
+export const allRoles = Object.values(roles)

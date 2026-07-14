@@ -1,0 +1,57 @@
+@media (max-width: 991.98px) {
+  .main-sidebar {
+    transform: translateX(100%);
+  }
+
+  .sidebar-open .main-sidebar {
+    transform: translateX(0);
+  }
+
+  .main-header,
+  .content-wrapper,
+  .main-footer {
+    margin-right: 0;
+  }
+
+  .sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1035;
+    display: block;
+    border: 0;
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+  .main-sidebar {
+    z-index: 1040;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .auth-page .login-box {
+    width: 92%;
+    margin-top: 20px;
+  }
+
+  .auth-card__footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .content-header .row > div:last-child {
+    margin-top: 0.5rem;
+  }
+
+  .breadcrumb {
+    float: none;
+    padding-right: 0;
+  }
+
+  .page-title-row h1 {
+    font-size: 1.45rem;
+  }
+
+  .main-footer {
+    font-size: 0.85rem;
+  }
+}

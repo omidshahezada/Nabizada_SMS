@@ -1,0 +1,13 @@
+:root {
+  --app-info: #17a2b8;
+  --app-primary: #007bff;
+  --app-sidebar-width: 250px;
+  --app-focus: #f8c146;
+  --app-surface: #fff;
+  --app-page: #f4f6f9;
+  --app-text: #343a40;
+  --app-muted: #6c757d;
+  --app-border: #dee2e6;
+  font-family: Vazir, "Source Sans Pro", Tahoma, sans-serif;
+}
+

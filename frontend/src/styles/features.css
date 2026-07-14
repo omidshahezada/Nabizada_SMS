@@ -1,0 +1,272 @@
+.dashboard-stats .info-box {
+  height: calc(100% - 1rem);
+}
+
+.list-create-button {
+  margin-bottom: 1rem;
+}
+
+.list-toolbar {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.list-toolbar label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.list-toolbar__search {
+  min-width: 240px;
+  flex: 1 1 340px;
+}
+
+.list-toolbar__filter {
+  min-width: 190px;
+  flex: 0 1 260px;
+}
+
+.list-toolbar__size {
+  width: 130px;
+  flex: 0 0 130px;
+}
+
+.list-updating {
+  margin: -0.5rem 0 0.75rem;
+  color: var(--app-muted);
+  font-size: 0.9rem;
+}
+
+.sortable-header {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font-weight: inherit;
+  text-align: right;
+  cursor: pointer;
+}
+
+.table-actions form,
+.table-actions button {
+  margin: 0;
+}
+
+.list-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.list-pagination__summary {
+  margin: 0;
+  color: var(--app-muted);
+}
+
+.list-pagination__current {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  border-top: 1px solid var(--app-border);
+  border-bottom: 1px solid var(--app-border);
+  background: var(--app-surface);
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.detail-grid {
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.detail-grid__item dt {
+  margin-bottom: 0.5rem;
+}
+
+.detail-grid__item dd {
+  margin: 0;
+  color: var(--app-muted);
+  white-space: pre-wrap;
+}
+
+@media (max-width: 767.98px) {
+  .list-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .list-toolbar__search,
+  .list-toolbar__filter,
+  .list-toolbar__size {
+    width: 100%;
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .list-pagination {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .list-pagination .btn-group {
+    align-self: flex-start;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.image-preview {
+  display: block;
+  width: 110px;
+  height: 110px;
+  margin: 0.75rem 0 1rem;
+  border: 1px solid var(--app-border);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.image-preview--logo {
+  width: auto;
+  max-width: 220px;
+  border-radius: 0.5rem;
+  object-fit: contain;
+}
+
+.table-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.finance-balance,
+.finance-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.finance-balance h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.finance-balance strong {
+  font-size: 1.75rem;
+}
+
+.finance-tabs {
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.invoice-card {
+  padding: 2rem;
+  border: 1px solid var(--app-border);
+  border-radius: 0.5rem;
+  background: var(--app-surface);
+}
+
+.invoice-header {
+  display: grid;
+  align-items: start;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--app-border);
+  grid-template-columns: auto 1fr auto;
+  gap: 1.5rem;
+}
+
+.invoice-header h1,
+.invoice-header h2,
+.invoice-header p {
+  margin: 0 0 0.35rem;
+}
+
+.invoice-logo {
+  width: 90px;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.invoice-note,
+.invoice-customer {
+  margin: 1.25rem 0;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  background: var(--app-background);
+  white-space: pre-wrap;
+}
+
+.invoice-totals {
+  width: min(100%, 360px);
+  margin: 1.5rem 0 1.5rem auto;
+}
+
+.invoice-totals p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0.55rem;
+  border-bottom: 1px solid var(--app-border);
+}
+
+@media (max-width: 767.98px) {
+  .finance-balance,
+  .invoice-header {
+    align-items: stretch;
+    grid-template-columns: 1fr;
+  }
+
+  .finance-balance {
+    flex-direction: column;
+  }
+
+  .invoice-card {
+    padding: 1rem;
+  }
+}
+
+@media print {
+  .main-header,
+  .main-sidebar,
+  .content-header,
+  .main-footer,
+  .no-print {
+    display: none !important;
+  }
+
+  .content-wrapper,
+  .content,
+  .container-fluid {
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .invoice-card {
+    border: 0;
+    color: #000;
+    box-shadow: none;
+  }
+}
